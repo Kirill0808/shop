@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 10px 10px 10px 10px;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    position: absolute;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.header {
+    height: 615px;
+}
+.header .container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.header-wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carousel-inner {
+    position: relative;
+    margin: 20px 0 0 0;
+}
+
+.carousel-item:first-child h1{
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 20%;
+    left: 20%;
+    font-size: 40px;
+    /* transform: translate(-50%, -50%); */
+}
+.carousel-item:first-child .btn {
+    position: absolute;
+    background-color: #0E49B5;
+    border: 1px solid #0E49B5;
+    padding: 20px 40px;
+    color: white;
+    top: 36%;
+    left: 20%;
+    /* transform: translate(-50%, -50%) */
+}
+.carousel-item:nth-child(4) h1 {
+    position: absolute;
+    text-align: center;
+    color: black;
+    top: 20%;
+    left: 20%;
+    font-size: 50px;
+}
+.carousel-item:nth-child(4) .btn {
+    position: absolute;
+    background-color: #0E49B5;
+    border: 1px solid #0E49B5;
+    padding: 20px 40px;
+    color: white;
+    top: 36%;
+    left: 20%;
+}
+.carousel-item:nth-child(5) h1 {
+    position: absolute;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    color: black;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.btn {
+    position: absolute;
+    background-color: #0E49B5;
+    border: 1px solid #0E49B5;
+    padding: 15px 30px;
+    color: white;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn:hover {
+    background-color: cornflowerblue;
+}
+.search {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    padding: 15px 15px;
+    width: 1024px;
+    margin-left: 198px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    order: -1;
+}
+.search-field {
+    width: 300px;
+    border: 0; 
+}
+.search-field:focus {
+    outline: none;
+}
+.filter-icon {
+position: absolute;
+    left: 78%;
+    cursor: pointer;
+}
+.setting-icon {
+    position: absolute;
+    left: 82%;
+    cursor: pointer;
+}
+.main_container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+.page_menu {
+    max-width: 320px;
+    width: 40%;
+    padding: 17px 0 0 0;
+}
+ul.verticalaccordion {
+    padding: 0;
+    
+} 
+.accordion {
+    background-color: #EDF3FF;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: height 0.3s ease-in-out;
+}
+.active, .accordion:hover {
+    background-color: white; 
+}  
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    height: 170px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: max-height 0.2s ease-out;
+
+}
+.accordion:after {
+    content: '\203a';
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2335";
+}
+.page_content {
+    width: 80%;
+    margin: 0 0 0 35px;
+}   
+.product {
+    position: relative;
+    width: 300px;
+    height: 480px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 16px 20px 20px 14px;
+    float: left;
+    border-radius: 10px;
+    text-align: center;
+}
+.product .favorite {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+      /* background-color: red; */
+    overflow: initial;
+    box-shadow: 0px 0px 30px rgba(0,0,0, 0.1);
+    transition: box-shadow 0.2s;
+}
+.product .images {
+    width: 200px;
+    height: 200px;
+}
+.product .name {
+    font-size: 24px;
+    line-height: 28px;
+}
+.product .reviews {
+    padding: 10px 0 0 0;
+}
+.product .price {
+    font-size: 20px;
+}
+.btn_product {
+    background-color: #0E49B5;
+    border: 1px solid #0E49B5;
+    padding: 20px 40px;
+    color: white;
+    cursor: pointer;
+}
+.heart {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+.product .positiveMark {
+    padding: 30px 0 0 18px;
+    background-color: #EDF3FF;
+    height: 80px;
+}
+.btn_product:hover {
+    background-color: cornflowerblue;
+}
+.price {
+    padding: 10px;
+}
+.color,
+.memory {
+    display: flex;
+    justify-content: space-between;
+}
+.os {
+    padding: 22px 0 0 0;
+}
+
+.checkbox {
+    margin: 7px;
+}
+.column1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 0 0 0;
+    
+}
+.column2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 0 0 0;
+}
+.product:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
