@@ -68,18 +68,27 @@ document.addEventListener('click', (e) => {
    // Функция для безопасного вывода значений
    const safeValue = (value, defaultValue = 'N/A') => (value || value === 0 ? value : defaultValue);
 
-   // Получаем категорию товара, если она есть
-   const categoryContent = product.category ? product.category : 'No category';
-
    // Заполняем тело модального окна
    modalBody.innerHTML = `
 <div class="modal-product">
   <!-- Левая часть: картинка -->
-  <img src="img/${product.imgUrl}" class="modal-product-img" alt="${product.name}">
+  <div class="modal-product-left">
+    <img src="img/${product.imgUrl}" alt="${product.name}">
+  </div>
 
   <!-- Центральная часть: информация о товаре -->
   <div class="modal-product-details">
     <h3 class="name">${safeValue(product.name)}</h3>
+
+    <div class="modal-review">
+      <div class="review-score">
+        ❤️ <strong>${safeValue(product.orderInfo?.reviews ?? 0)}%</strong> Positive reviews
+      </div>
+      <div class="review-orders">
+        <strong>${safeValue(product.orderInfo?.orders ?? 0)}</strong> orders
+      </div>
+    </div>
+
     <p><strong>Color:</strong> ${product.color.join(', ')}</p>
     <p><strong>Operating System:</strong> ${safeValue(product.os)}</p>
     <p><strong>Chip:</strong> ${safeValue(product.chip.name)} (${safeValue(
@@ -92,11 +101,11 @@ document.addEventListener('click', (e) => {
     <p><strong>Category:</strong> ${safeValue(product.category)}</p>
   </div>
 
-  <!-- Правая часть: цена, количество товара и кнопка -->
+  <!-- Правая часть: цена, количество и кнопка -->
   <div class="modal-product-right">
     <div class="price">${safeValue(product.price)} $</div>
     <div class="stock ${product.orderInfo.inStock > 0 ? 'in-stock' : 'out-of-stock'}">
-      ${product.orderInfo.inStock} left in stock
+      Stock: <strong>${product.orderInfo.inStock}</strong> pcs.
     </div>
     <button class="btn_product" ${product.orderInfo.inStock === 0 ? 'disabled' : ''}>
       Add to cart
