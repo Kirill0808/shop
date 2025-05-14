@@ -1,188 +1,329 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MacOutlet</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-    <div class="wrapper">
-        <div class="header">
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>MacOutlet</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="header">
             <div class="container">
-                <div class="header-wrap">
-                    <a href="#" class="href"><img src="img/items/image1.jpg" alt=""></a>
-                    <a href="#" id="cartToggle" class="href">
-                        <img src="img/icons/cart-1.svg" alt="">
-                        <span id="cartCount">0</span> <!-- Счетчик товаров в корзине -->
-                    </a>
-                </div>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/banners/watch_banner.jpg" class="d-block w-100" alt="...">
-                            <h1>Apple Watch 4</h1>
-                            <a class="btn_product" href="#">Add to cart</a>
-                        </div>
-                        <div class="carousel-item ">
-                            <img src="img/banners/mac_book_banner.jpg" class="d-block w-100" alt="...">
-                            <h1>MacBook</h1>
-                            <a class="btn_product" href="#">Add to cart</a>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/banners/iphone_12_banner.jpg" class="d-block w-100" alt="...">
-                            <a class="btn_product" href="#">Add to cart</a>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/banners/apple_tv_banner.png" class="d-block w-100" alt="...">
-                            <h1>Apple TV</h1>
-                            <a class="btn_product" href="#">Add to cart</a>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/banners/air_pods_max_banner.jpg" class="d-block w-100" alt="...">
-                            <h1>AirPods Max</h1>
-                            <a class="btn_product" href="#">Add to cart</a>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/banners/airpods_pro_banner.png" class="d-block w-100" alt="...">
-                            <h1>AirPods Pro</h1>
-                            <a class="btn_product" href="#">Add to cart</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
+               <div class="header-wrap">
+                  <a href="#" class="href"><img src="img/items/image1.jpg" alt="" /></a>
+                  <a href="#" id="cartToggle" class="href">
+                     <img src="img/icons/cart-1.svg" alt="" />
+                     <span id="cartCount">0</span>
+                     <!-- Счетчик товаров в корзине -->
+                  </a>
+               </div>
+               <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img src="img/banners/watch_banner.jpg" class="d-block w-100" alt="..." />
+                        <h1>Apple Watch 4</h1>
+                        <a class="btn_product" href="#">Add to cart</a>
+                     </div>
+                     <div class="carousel-item">
+                        <img
+                           src="img/banners/mac_book_banner.jpg"
+                           class="d-block w-100"
+                           alt="..."
+                        />
+                        <h1>MacBook</h1>
+                        <a class="btn_product" href="#">Add to cart</a>
+                     </div>
+                     <div class="carousel-item">
+                        <img
+                           src="img/banners/iphone_12_banner.jpg"
+                           class="d-block w-100"
+                           alt="..."
+                        />
+                        <a class="btn_product" href="#">Add to cart</a>
+                     </div>
+                     <div class="carousel-item">
+                        <img
+                           src="img/banners/apple_tv_banner.png"
+                           class="d-block w-100"
+                           alt="..."
+                        />
+                        <h1>Apple TV</h1>
+                        <a class="btn_product" href="#">Add to cart</a>
+                     </div>
+                     <div class="carousel-item">
+                        <img
+                           src="img/banners/air_pods_max_banner.jpg"
+                           class="d-block w-100"
+                           alt="..."
+                        />
+                        <h1>AirPods Max</h1>
+                        <a class="btn_product" href="#">Add to cart</a>
+                     </div>
+                     <div class="carousel-item">
+                        <img
+                           src="img/banners/airpods_pro_banner.png"
+                           class="d-block w-100"
+                           alt="..."
+                        />
+                        <h1>AirPods Pro</h1>
+                        <a class="btn_product" href="#">Add to cart</a>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-        <main class="main">
-         <div class="search">
-            <img src="img/icons/search.svg" alt="" class="search-icon">
-            <input type="text" class="search-field" placeholder="Enter device name...">
-            <div class="search-icons">
-              <a href="#" class="filter-icon"><img src="img/icons/filter.svg" alt=""></a>
-              <a href="#" class="setting-icon"><img src="img/icons/settings.svg" alt=""></a>
+         </div>
+         <main class="main">
+            <div class="search">
+               <img src="img/icons/search.svg" alt="" class="search-icon" />
+               <input type="text" class="search-field" placeholder="Enter device name..." />
+               <div class="search-icons">
+                  <a href="#" class="filter-icon"><img src="img/icons/filter.svg" alt="" /></a>
+                  <a href="#" class="setting-icon"><img src="img/icons/settings.svg" alt="" /></a>
+               </div>
             </div>
-          </div>
             <div class="main_container">
-                <div class="page_menu">
+               <div class="page_menu">
                   <ul class="verticalaccordion">
                      <button class="accordion">Price <span class="arrow">›</span></button>
                      <div class="panel">
-                       <div class="price">
-                         <p class="from">From</p>
-                         <input class="input-from" type="text">
-                         <p class="to">To</p>
-                         <input class="input-to" type="text">
-                       </div>
+                        <div class="price">
+                           <p class="from">From</p>
+                           <input class="input-from" type="text" />
+                           <p class="to">To</p>
+                           <input class="input-to" type="text" />
+                        </div>
                      </div>
-                   
+
                      <button class="accordion">Color <span class="arrow">›</span></button>
                      <div class="panel">
-                       <div class="color">
-                         <div class="column1">
-                           <div class="checkbox-wrapper"><input type="checkbox" class="color-filter" id="red"><label for="red">Red</label></div>
-                           <div class="checkbox-wrapper"><input type="checkbox" class="color-filter" id="green"><label for="green">Green</label></div>
-                           <div class="checkbox-wrapper"><input type="checkbox" class="color-filter" id="black"><label for="black">Black</label></div>
-                           <div class="checkbox-wrapper"><input type="checkbox" class="color-filter" id="white"><label for="white">White</label></div>
-                         </div>
-                         <div class="column2">
-                           <div class="checkbox-wrapper"><input type="checkbox" class="color-filter" id="blue"><label for="blue">Blue</label></div>
-                           <div class="checkbox-wrapper"><input type="checkbox" class="color-filter" id="grey"><label for="grey">Grey</label></div>
-                           <div class="checkbox-wrapper"><input type="checkbox" class="color-filter" id="gold"><label for="gold">Gold</label></div>
-                           <div class="checkbox-wrapper"><input type="checkbox" class="color-filter" id="yellow"><label for="yellow">Yellow</label></div>
-                         </div>
-                       </div>
+                        <div class="color">
+                           <div class="column1">
+                              <div class="checkbox-wrapper">
+                                 <input type="checkbox" class="color-filter" id="red" /><label
+                                    for="red"
+                                    >Red</label
+                                 >
+                              </div>
+                              <div class="checkbox-wrapper">
+                                 <input type="checkbox" class="color-filter" id="green" /><label
+                                    for="green"
+                                    >Green</label
+                                 >
+                              </div>
+                              <div class="checkbox-wrapper">
+                                 <input type="checkbox" class="color-filter" id="black" /><label
+                                    for="black"
+                                    >Black</label
+                                 >
+                              </div>
+                              <div class="checkbox-wrapper">
+                                 <input type="checkbox" class="color-filter" id="white" /><label
+                                    for="white"
+                                    >White</label
+                                 >
+                              </div>
+                           </div>
+                           <div class="column2">
+                              <div class="checkbox-wrapper">
+                                 <input type="checkbox" class="color-filter" id="blue" /><label
+                                    for="blue"
+                                    >Blue</label
+                                 >
+                              </div>
+                              <div class="checkbox-wrapper">
+                                 <input type="checkbox" class="color-filter" id="grey" /><label
+                                    for="grey"
+                                    >Grey</label
+                                 >
+                              </div>
+                              <div class="checkbox-wrapper">
+                                 <input type="checkbox" class="color-filter" id="gold" /><label
+                                    for="gold"
+                                    >Gold</label
+                                 >
+                              </div>
+                              <div class="checkbox-wrapper">
+                                 <input type="checkbox" class="color-filter" id="yellow" /><label
+                                    for="yellow"
+                                    >Yellow</label
+                                 >
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                   
+
                      <button class="accordion">Memory <span class="arrow">›</span></button>
                      <div class="panel">
-                       <div class="memory">
-                         <div class="column1">
-                           <div class="checkbox-wrapper"><input type="checkbox" class="memory-filter" id="32gb"><label for="32gb">32 Gb</label></div>
-                           <div class="checkbox-wrapper"><input type="checkbox" class="memory-filter" id="64gb"><label for="64gb">64 Gb</label></div>
-                           <div class="checkbox-wrapper"><input type="checkbox" class="memory-filter" id="128gb"><label for="128gb">128 Gb</label></div>
-                           <div class="checkbox-wrapper"><input type="checkbox" class="memory-filter" id="256gb"><label for="256gb">256 Gb</label></div>
-                         </div>
-                         <div class="column2">
-                           <div class="checkbox-wrapper"><input type="checkbox" class="memory-filter" id="512gb"><label for="512gb">512 Gb</label></div>
-                           <div class="checkbox-wrapper"><input type="checkbox" class="memory-filter" id="1024gb"><label for="1024gb">1 TB</label></div>
-                           <div class="checkbox-wrapper"><input type="checkbox" class="memory-filter" id="2048gb"><label for="2048gb">2 TB</label></div>
-                           <div class="checkbox-wrapper"><input type="checkbox" class="memory-filter" id="4096gb"><label for="4096gb">4 TB</label></div>
-                         </div>
-                       </div>
+                        <div class="memory">
+                           <div class="column1">
+                              <div class="checkbox-wrapper">
+                                 <input type="checkbox" class="memory-filter" id="32gb" /><label
+                                    for="32gb"
+                                    >32 Gb</label
+                                 >
+                              </div>
+                              <div class="checkbox-wrapper">
+                                 <input type="checkbox" class="memory-filter" id="64gb" /><label
+                                    for="64gb"
+                                    >64 Gb</label
+                                 >
+                              </div>
+                              <div class="checkbox-wrapper">
+                                 <input type="checkbox" class="memory-filter" id="128gb" /><label
+                                    for="128gb"
+                                    >128 Gb</label
+                                 >
+                              </div>
+                              <div class="checkbox-wrapper">
+                                 <input type="checkbox" class="memory-filter" id="256gb" /><label
+                                    for="256gb"
+                                    >256 Gb</label
+                                 >
+                              </div>
+                           </div>
+                           <div class="column2">
+                              <div class="checkbox-wrapper">
+                                 <input type="checkbox" class="memory-filter" id="512gb" /><label
+                                    for="512gb"
+                                    >512 Gb</label
+                                 >
+                              </div>
+                              <div class="checkbox-wrapper">
+                                 <input type="checkbox" class="memory-filter" id="1024gb" /><label
+                                    for="1024gb"
+                                    >1 TB</label
+                                 >
+                              </div>
+                              <div class="checkbox-wrapper">
+                                 <input type="checkbox" class="memory-filter" id="2048gb" /><label
+                                    for="2048gb"
+                                    >2 TB</label
+                                 >
+                              </div>
+                              <div class="checkbox-wrapper">
+                                 <input type="checkbox" class="memory-filter" id="4096gb" /><label
+                                    for="4096gb"
+                                    >4 TB</label
+                                 >
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                   
+
                      <button class="accordion">OS <span class="arrow">›</span></button>
                      <div class="panel">
-                       <div class="os">
-                         <div class="checkbox-wrapper"><input type="checkbox" class="os-filter" id="ios"><label for="IOS">IOS</label></div>
-                         <div class="checkbox-wrapper"><input type="checkbox" class="os-filter" id="macos"><label for="Mac-OS">Mac OS</label></div>
-                         <div class="checkbox-wrapper"><input type="checkbox" class="os-filter" id="tvos"><label for="tvOS">TV OS</label></div>
-                         <div class="checkbox-wrapper"><input type="checkbox" class="os-filter" id="watchos"><label for="Watch-OS">Watch OS</label></div>
-                         <div class="checkbox-wrapper"><input type="checkbox" class="os-filter" id="ipados"><label for="Ipad-OS">Ipad OS</label></div>
-                       </div>
+                        <div class="os">
+                           <div class="checkbox-wrapper">
+                              <input type="checkbox" class="os-filter" id="ios" /><label for="IOS"
+                                 >IOS</label
+                              >
+                           </div>
+                           <div class="checkbox-wrapper">
+                              <input type="checkbox" class="os-filter" id="macos" /><label
+                                 for="Mac-OS"
+                                 >Mac OS</label
+                              >
+                           </div>
+                           <div class="checkbox-wrapper">
+                              <input type="checkbox" class="os-filter" id="tvos" /><label for="tvOS"
+                                 >TV OS</label
+                              >
+                           </div>
+                           <div class="checkbox-wrapper">
+                              <input type="checkbox" class="os-filter" id="watchos" /><label
+                                 for="Watch-OS"
+                                 >Watch OS</label
+                              >
+                           </div>
+                           <div class="checkbox-wrapper">
+                              <input type="checkbox" class="os-filter" id="ipados" /><label
+                                 for="Ipad-OS"
+                                 >Ipad OS</label
+                              >
+                           </div>
+                        </div>
                      </div>
-                   
+
                      <button class="accordion">Display <span class="arrow">›</span></button>
                      <div class="panel">
-                       <div class="display">
-                         <div class="checkbox-wrapper"><input type="checkbox" class="display-filter" id="2-5"><label for="2-5">2 - 5 inch</label></div>
-                         <div class="checkbox-wrapper"><input type="checkbox" class="display-filter" id="5-7"><label for="5-7">5 - 7 inch</label></div>
-                         <div class="checkbox-wrapper"><input type="checkbox" class="display-filter" id="7-12"><label for="7-12">7 - 12 inch</label></div>
-                         <div class="checkbox-wrapper"><input type="checkbox" class="display-filter" id="12-16"><label for="12-16">12 - 16 inch</label></div>
-                         <div class="checkbox-wrapper"><input type="checkbox" class="display-filter" id="16-100"><label for="16-100">+16 inch</label></div>
-                       </div>
+                        <div class="display">
+                           <div class="checkbox-wrapper">
+                              <input type="checkbox" class="display-filter" id="2-5" /><label
+                                 for="2-5"
+                                 >2 - 5 inch</label
+                              >
+                           </div>
+                           <div class="checkbox-wrapper">
+                              <input type="checkbox" class="display-filter" id="5-7" /><label
+                                 for="5-7"
+                                 >5 - 7 inch</label
+                              >
+                           </div>
+                           <div class="checkbox-wrapper">
+                              <input type="checkbox" class="display-filter" id="7-12" /><label
+                                 for="7-12"
+                                 >7 - 12 inch</label
+                              >
+                           </div>
+                           <div class="checkbox-wrapper">
+                              <input type="checkbox" class="display-filter" id="12-16" /><label
+                                 for="12-16"
+                                 >12 - 16 inch</label
+                              >
+                           </div>
+                           <div class="checkbox-wrapper">
+                              <input type="checkbox" class="display-filter" id="16-100" /><label
+                                 for="16-100"
+                                 >+16 inch</label
+                              >
+                           </div>
+                        </div>
                      </div>
-                   </ul>
-                    
-                </div>
-                
-                <div class="page_content" id="page_content">
-                <div class="product-container"></div>
+                  </ul>
+               </div>
 
-                </div>
-                
+               <div class="page_content" id="page_content">
+                  <div class="product-container"></div>
+               </div>
             </div>
             <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
                <div class="modal-dialog modal-lg modal-dialog-centered">
-                 <div class="modal-content">
-                   <div class="modal-body" id="modalBody">
-                     <!-- Контент будет вставлен динамически -->
-                   </div>
-                 </div>
+                  <div class="modal-content">
+                     <div class="modal-body" id="modalBody">
+                        <!-- Контент будет вставлен динамически -->
+                     </div>
+                  </div>
                </div>
-             </div>
-            
-        </main>
-              
-        <div class="cart-wrapper" id="cartWrapper" style="display: none;">
+            </div>
+         </main>
+
+         <div class="cart-wrapper" id="cartWrapper" style="display: none">
             <div class="cart">
                <h2>Shopping Cart</h2>
                <p class="cart-subtitle">Checkout is almost done!</p>
-               
+
                <div class="cart-items">
                   <!-- Товары будут добавляться сюда -->
                   <p class="empty-text">Your cart is empty.</p>
                </div>
-               
+
                <div class="cart-summary">
                   <p>Total amount: <strong>0 ptc.</strong></p>
                   <p>Total price: <strong>0$</strong></p>
                </div>
-               
+
                <button class="buy-btn" disabled>Buy</button>
             </div>
-        </div>
-    </div>
-    
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="js/index.js" defer></script>
-    
-    
-</body>
+         </div>
+      </div>
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script type="module" src="js/index.js" defer></script>
+   </body>
 </html>
-
-
-
