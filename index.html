@@ -15,7 +15,10 @@
             <div class="container">
                 <div class="header-wrap">
                     <a href="#" class="href"><img src="img/items/image1.jpg" alt=""></a>
-                    <a href="#" class="href"><img src="img/icons/cart-1.svg" alt=""></a>
+                    <a href="#" id="cartToggle" class="href">
+                        <img src="img/icons/cart-1.svg" alt="">
+                        <span id="cartCount">0</span> <!-- Счетчик товаров в корзине -->
+                    </a>
                 </div>
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -153,6 +156,25 @@
              </div>
             
         </main>
+              
+        <div class="cart-wrapper" id="cartWrapper" style="display: none;">
+            <div class="cart">
+               <h2>Shopping Cart</h2>
+               <p class="cart-subtitle">Checkout is almost done!</p>
+               
+               <div class="cart-items">
+                  <!-- Товары будут добавляться сюда -->
+                  <p class="empty-text">Your cart is empty.</p>
+               </div>
+               
+               <div class="cart-summary">
+                  <p>Total amount: <strong>0 ptc.</strong></p>
+                  <p>Total price: <strong>0$</strong></p>
+               </div>
+               
+               <button class="buy-btn" disabled>Buy</button>
+            </div>
+        </div>
     </div>
     
     <script src="js/bootstrap.bundle.min.js"></script>
