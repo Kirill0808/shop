@@ -633,7 +633,7 @@ input[type='checkbox']:checked::after {
 }
 
 .cart-wrapper p {
-   color: #888;
+   color: black;
    font-size: 16px;
    margin-bottom: 20px;
 }
@@ -666,13 +666,13 @@ input[type='checkbox']:checked::after {
 .cart-item {
    display: flex;
    align-items: center;
-   gap: 10px;
+   gap: 25px;
    padding: 12px 0;
    border-bottom: 1px solid #ccc;
 }
 
 .cart-item-img {
-   width: 60px;
+   width: 70px;
    height: auto;
    border-radius: 8px;
 }
@@ -758,18 +758,22 @@ input[type='checkbox']:checked::after {
 
 .cart-summary {
    display: flex;
-   justify-content: space-between;
+   justify-content: center; /* Центр по горизонтали */
+   align-items: center; /* Центр по вертикали */
+   gap: 30px; /* Расстояние между элементами */
    font-size: 16px;
+   height: 60px; /* Задаём высоту для вертикального центрирования */
    margin-bottom: 20px;
    padding: 10px;
-   background-color: #f6f9ff;
+   background-color: #e4e9f4;
    border-radius: 8px;
    font-weight: bold;
+   text-align: center;
 }
 
 .buy-btn {
-   width: 100%;
-   padding: 15px 0;
+   width: 200px; /* фиксированная длина */
+   padding: 7px 0;
    font-size: 18px;
    background-color: #3f51b5;
    color: white;
@@ -778,10 +782,18 @@ input[type='checkbox']:checked::after {
    cursor: pointer;
    font-weight: bold;
    transition: background 0.3s;
+   margin: 0 auto; /* по центру родителя */
+   display: block;
 }
 
 .buy-btn:hover:not(:disabled) {
-   background-color: #2c3da6;
+   background-color: cornflowerblue; /* Цвет при ховере */
+}
+
+.buy-btn:disabled {
+   background-color: #b0b0b0; /* светло-серый фон */
+   cursor: not-allowed; /* перечеркнутый курсор */
+   opacity: 0.7; /* немного прозрачности для визуального эффекта */
 }
 
 #cartToggle {
