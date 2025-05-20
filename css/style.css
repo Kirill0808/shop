@@ -63,6 +63,7 @@ h1 {
    color: white;
    z-index: 10;
 }
+
 .carousel-item:nth-child(1) .btn_product {
    position: absolute;
    top: 40%;
@@ -79,6 +80,7 @@ h1 {
    color: white;
    z-index: 10;
 }
+
 .carousel-item:nth-child(2) .btn_product {
    position: absolute;
    top: 72%;
@@ -105,6 +107,7 @@ h1 {
    color: black;
    z-index: 10;
 }
+
 .carousel-item:nth-child(4) .btn_product {
    position: absolute;
    top: 38%;
@@ -123,6 +126,7 @@ h1 {
    color: black;
    z-index: 10;
 }
+
 .carousel-item:nth-child(5) .btn_product {
    position: absolute;
    top: 55%;
@@ -759,14 +763,13 @@ input[type='checkbox']:checked::after {
    display: flex;
    justify-content: center; /* Центр по горизонтали */
    align-items: center; /* Центр по вертикали */
-   gap: 30px; /* Расстояние между элементами */
+   gap: 20px; /* Расстояние между элементами */
    font-size: 16px;
    height: 60px; /* Задаём высоту для вертикального центрирования */
    margin-bottom: 20px;
    padding: 10px;
    background-color: #e4e9f4;
    border-radius: 8px;
-   font-weight: bold;
    text-align: center;
 }
 
